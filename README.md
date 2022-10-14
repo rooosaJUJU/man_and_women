@@ -1,4 +1,4 @@
-# man_and_women
+# Man and Women
 One page design for cute folks.
 
 ## Contributor
