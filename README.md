@@ -5,4 +5,4 @@ One page design for cute folks.
 * [Rosa Zhu](https://github.com/rooosaJUJU) (rooosa.juju@gmail.com)
 
 ## Abstract
-An accordian design with cute folks.
+An accordion design with cute folks.
