@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>居的手风琴·3D（1）</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .shell {
+            width: 90%;
+            height: 500px;
+            display: flex;
+        }
+        .box {
+            flex: 1;
+            /* 即在光标没放上去之前，四个box占据的空间是一样的 */
+            /* 如果所有项目的flex-grow属性都为1：则他们将等分剩余空间（如果有的话） */
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            /* box-shadow: 10px 10px 20px #e9e2e9; */
+            border-radius: 20px;
+        }
+        .box>img {
+            width: 100%;
+            height: 85%;
+            object-fit: contain;
+            transition: .5s;
+        }
+        .box>span {
+            font: 100 45px 'Nanum Pen Script';
+            text-align: center;
+            height: 15%;
+            display: flex;
+            /* text-shadow: 5px 5px 5px #e9e2e9; */
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            left: 20%;
+        }
+        .box:hover {
+            flex-basis: 40%;
+            /* 也就是这个其他的分配剩下的60% */
+        }
+        .box:hover>img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="box">
+            <img src="./PIC/he_sitting_with_notebook.png">
+            <!-- <span>Man</span> -->
+        </div>
+        <div class="box">
+            <img src="./PIC/she_with_phone.png">
+            <!-- <span>Women</span> -->
+        </div>
+    </div>
+</body>
+
+</html>
